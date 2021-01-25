@@ -1,0 +1,53 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+   android:background="@drawable/background_image"
+   android:padding="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<EditText
+    android:textStyle="bold"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="city name demo"
+    android:id="@+id/cityname"
+    android:focusable="false"
+    android:layout_margin="8dp"
+    android:textSize="20dp"
+    android:background="@color/white"
+    />
+
+    <EditText
+        android:textSize="20dp"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for your Restaurant"
+        android:id="@+id/edit_text_resaurant_name"
+
+        />
+    <Button
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="search restaurants"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="10dp"
+        android:id="@+id/textview"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="8dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/mainRecyclerView"/>
+
+</LinearLayout>
